@@ -8,6 +8,8 @@ Live page: [alessandroannini.github.io/foglio](https://alessandroannini.github.i
 npx skills add AlessandroAnnini/foglio
 ```
 
+Listing: [skills.sh/AlessandroAnnini/foglio](https://skills.sh/AlessandroAnnini/foglio)
+
 Then say: Document this with Foglio. In Cursor, attach `@foglio`. The skill loads only when you name Foglio.
 
 One HTML file. No build. Fonts and Mermaid load from CDNs.
@@ -56,6 +58,8 @@ After it stops, check that `#nav-links` and `#sec-select` match every `section[i
 Repository: [github.com/AlessandroAnnini/foglio](https://github.com/AlessandroAnnini/foglio)
 
 Project page: [alessandroannini.github.io/foglio](https://alessandroannini.github.io/foglio/)
+
+Skill listing: [skills.sh/AlessandroAnnini/foglio](https://skills.sh/AlessandroAnnini/foglio)
 
 ## License
 
