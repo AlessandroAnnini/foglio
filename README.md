@@ -2,6 +2,8 @@
 
 A foglio is the sheet. This kit is that sheet: one HTML file, complete, ready to open or send.
 
+Live page: [alessandroannini.github.io/foglio](https://alessandroannini.github.io/foglio/)
+
 Copy [skeleton.html](skeleton.html) to write a page. The rules sit in [RECIPE.md](RECIPE.md). [catalog.html](catalog.html) is a catalog of allowed blocks, not a required table of contents. [index.html](index.html) is this project's own page, built from the skeleton. The outline comes from your source.
 
 Works for specifications, procedures, meeting notes, use-case maps, training, runbooks, API notes, and research summaries.
@@ -25,7 +27,7 @@ Works for specifications, procedures, meeting notes, use-case maps, training, ru
 - Motion on transform and opacity, 160 to 400ms. `prefers-reduced-motion` is honored.
 - WCAG 2.2 AA: body 4.5:1, UI 3:1, 200% zoom, visible focus, native `dialog` for the graph lightbox.
 - `html lang` matches the document. Italian, English, or other.
-- GitHub Pages ready: `index.html` is the project page at the repo root.
+- GitHub Pages ready: `index.html` is the project page at the repo root. Live at [alessandroannini.github.io/foglio](https://alessandroannini.github.io/foglio/).
 
 ## Contents
 
@@ -53,15 +55,9 @@ An LLM should load `RECIPE.md` and `skeleton.html`, then your notes. Do not ask 
 
 ## GitHub
 
-This folder is the whole project. To publish it as its own repository:
+Repository: [github.com/AlessandroAnnini/foglio](https://github.com/AlessandroAnnini/foglio)
 
-```
-git init
-git add .
-git commit -m "Add Foglio documentation kit"
-```
-
-Then create a repository on GitHub and push. For GitHub Pages, serve the root.
+Project page: [alessandroannini.github.io/foglio](https://alessandroannini.github.io/foglio/)
 
 ## License
 
