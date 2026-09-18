@@ -43,15 +43,48 @@ Works for specifications, procedures, meeting notes, use-case maps, training, ru
 
 Inter and JetBrains Mono load from Google Fonts. Mermaid 11 loads from jsDelivr.
 
-## Write a page
+## Getting started
 
-1. Copy `skeleton.html` to a new file.
-2. Fill only the `<!-- llm-slot:... -->` regions (title, logo, nav, hero, sections, footer).
-3. Leave every `<!-- llm-frozen:... -->` region untouched.
-4. Follow the writing rules in `RECIPE.md`.
-5. Match `#nav-links` and `#sec-select` to your `section[id]` list. Do not id a section `mermaid`.
+Clone this repository, or copy `RECIPE.md` and `skeleton.html` into the folder you want to document. Add `catalog.html` only when the model needs to see a painted block.
 
-An LLM should load `RECIPE.md` and `skeleton.html`, then your notes. Do not ask it to regenerate the CSS.
+Name the document type from the source: spec, procedure, notes, map, training, runbook, API notes, or other. Gather the notes, transcript, or file list that belong on the page. Those notes go last in the prompt.
+
+Ask the model to copy `skeleton.html` to an output path and fill only the `llm-slot` regions. Do not ask it to write CSS or to start from a blank HTML file.
+
+```
+Read RECIPE.md first, then skeleton.html.
+Document type: runbook (or spec, notes, ...).
+Copy skeleton.html to docs/overview.html.
+Fill llm-slot regions only. Keep llm-frozen regions byte-identical.
+Source notes:
+<paste notes here>
+```
+
+### Cursor
+
+Open the Foglio folder, or add the two kit files to the project. In chat, attach `@RECIPE.md` and `@skeleton.html`, then `@` or paste your notes. Ask the agent to copy the skeleton to the output path and stop after the slots.
+
+### Visual Studio Code
+
+Same files, same order. In GitHub Copilot Chat, attach them with `#file:RECIPE.md` and `#file:skeleton.html` (or `@` if your build uses that). In the Claude Code extension, type `@RECIPE.md` and `@skeleton.html`. Then add the source and the output path.
+
+### Claude Code
+
+From a terminal in the project (or with the kit on disk), ask Claude to read `RECIPE.md` and `skeleton.html` first, then the source notes. Give it an output path. It can copy the skeleton on disk. Do not let it regenerate the stylesheet.
+
+### ChatGPT, Claude, and other chat UIs
+
+Upload or paste `RECIPE.md` and `skeleton.html` first. Put the project notes in the last message. Ask for one complete HTML file. Download it and open it in a browser.
+
+Windsurf, Cline, Continue, and similar hosts follow the same order: recipe and skeleton in the prefix, notes last, one output path, slots only.
+
+### After it stops
+
+1. Check that `#nav-links` and `#sec-select` match every `section[id]`, same order, same labels. Do not id a section `mermaid`.
+2. Leave every `<!-- llm-frozen:... -->` region untouched. If CSS changed, restore those blocks from `skeleton.html`.
+3. Open the HTML file. Switch Light, Dark, and System. Expand a diagram if you asked for one.
+
+The writing rules and the full prompt shape sit in [RECIPE.md](RECIPE.md). The live page walks the same steps under [Getting started](https://alessandroannini.github.io/foglio/#start).
 
 ## GitHub
 
