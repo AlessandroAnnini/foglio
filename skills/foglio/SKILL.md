@@ -5,6 +5,8 @@ description: >-
   Use when the user mentions Foglio, asks to use the Foglio skill,
   or asks to write a Foglio page.
 disable-model-invocation: true
+metadata:
+  version: "1.0.0"
 ---
 
 # Foglio

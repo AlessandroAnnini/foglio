@@ -2,6 +2,8 @@
 
 A foglio is the sheet. This kit is that sheet: one HTML file an LLM can fill without rewriting the CSS.
 
+Version [1.0.0](https://github.com/AlessandroAnnini/foglio/releases/tag/v1.0.0)
+
 Live page: [alessandroannini.github.io/foglio](https://alessandroannini.github.io/foglio/)
 
 ```
@@ -41,6 +43,7 @@ Works for specifications, procedures, meeting notes, use-case maps, training, ru
 | [skills/foglio](skills/foglio/SKILL.md) | Installable agent skill |
 | [llms.txt](llms.txt) | Index for language models |
 | [LICENSE](LICENSE) | MIT |
+| [VERSION](VERSION) | Kit version |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to change the kit |
 
 ## Getting started
