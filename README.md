@@ -37,6 +37,7 @@ Works for specifications, procedures, meeting notes, use-case maps, training, ru
 | [catalog.html](catalog.html) | Specimen and visual catalog |
 | [skeleton.html](skeleton.html) | Start file: frozen chrome, empty slots |
 | [RECIPE.md](RECIPE.md) | Protocol, writing rules, tokens, catalog |
+| [skills/foglio](skills/foglio/SKILL.md) | Installable agent skill |
 | [llms.txt](llms.txt) | Index for language models |
 | [LICENSE](LICENSE) | MIT |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to change the kit |
@@ -45,7 +46,15 @@ Inter and JetBrains Mono load from Google Fonts. Mermaid 11 loads from jsDelivr.
 
 ## Getting started
 
-Clone this repository, or copy `RECIPE.md` and `skeleton.html` into the folder you want to document. Add `catalog.html` only when the model needs to see a painted block.
+Install the skill in the project you want to document:
+
+```
+npx skills add AlessandroAnnini/foglio
+```
+
+Then say: Document this with Foglio. In Cursor, attach `@foglio`. The skill loads only when you name Foglio.
+
+Clone this repository, or copy `RECIPE.md` and `skeleton.html`, if you are not using the skill. Add `catalog.html` only when the model needs to see a painted block.
 
 Name the document type from the source: spec, procedure, notes, map, training, runbook, API notes, or other. Gather the notes, transcript, or file list that belong on the page. Those notes go last in the prompt.
 
@@ -62,7 +71,7 @@ Source notes:
 
 ### Cursor
 
-Open the Foglio folder, or add the two kit files to the project. In chat, attach `@RECIPE.md` and `@skeleton.html`, then `@` or paste your notes. Ask the agent to copy the skeleton to the output path and stop after the slots.
+After the skill is installed, attach `@foglio` and say Document this with Foglio. Or attach `@RECIPE.md` and `@skeleton.html`, then `@` or paste your notes, and ask the agent to copy the skeleton to the output path and stop after the slots.
 
 ### Visual Studio Code
 

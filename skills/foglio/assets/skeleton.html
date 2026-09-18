@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- llm-slot:title --><title>Foglio</title><!-- /llm-slot:title -->
+  <!-- llm-slot:title --><title>Document title</title><!-- /llm-slot:title -->
   <!-- llm-frozen:boot -->
   <script>
     (function () {
@@ -884,29 +884,15 @@
   -->
   <nav>
     <!-- llm-slot:logo -->
-    <a class="logo" href="#top"><span>{</span> FOGLIO <span>}</span></a>
+    <a class="logo" href="#top"><span>{</span> NAME <span>}</span></a>
     <!-- /llm-slot:logo -->
     <div class="nav-jump" id="nav-jump">
       <!-- llm-slot:nav -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="#what">What</a></li>
-        <li><a href="#why">Why</a></li>
-        <li><a href="#start">Start</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#advantages">Advantages</a></li>
-        <li><a href="#method">Method</a></li>
-        <li><a href="#map">Map</a></li>
-        <li><a href="#diagrams">Diagrams</a></li>
+        <li><a href="#one">One</a></li>
       </ul>
       <select class="sec-select" id="sec-select" aria-label="Section">
-        <option value="#what">What</option>
-        <option value="#why">Why</option>
-        <option value="#start">Start</option>
-        <option value="#features">Features</option>
-        <option value="#advantages">Advantages</option>
-        <option value="#method">Method</option>
-        <option value="#map">Map</option>
-        <option value="#diagrams">Diagrams</option>
+        <option value="#one">One</option>
       </select>
       <!-- /llm-slot:nav -->
     </div>
@@ -947,456 +933,39 @@
     <div class="orb orb-b"></div>
     <!-- llm-slot:hero -->
     <div class="hero-inner">
-      <div class="label">Documentation kit</div>
-      <h1>The sheet.<br><em>One HTML file.</em></h1>
-      <p class="lede">
-        A foglio is the sheet. This kit is that sheet: one complete HTML
-        file, ready to open or send. Copy the skeleton, fill the slots,
-        leave the chrome alone. The outline comes from your source.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#start">Get started</a>
-        <a class="btn btn-ghost" href="RECIPE.md">Read the recipe</a>
-      </div>
-      <div class="stats">
-        <div>
-          <div class="stat-n">1</div>
-          <div class="stat-l">HTML file</div>
-        </div>
-        <div>
-          <div class="stat-n">0</div>
-          <div class="stat-l">Build step</div>
-        </div>
-        <div>
-          <div class="stat-n">3</div>
-          <div class="stat-l">Themes</div>
-        </div>
-      </div>
+      <div class="label">Label</div>
+      <h1>Title.<br><em>Accent.</em></h1>
+      <p class="lede">Lead paragraph. 65ch. One space between sentences.</p>
     </div>
     <!-- /llm-slot:hero -->
   </header>
 
   <!-- llm-slot:sections -->
-  <section id="what">
+  <section id="one">
     <div class="wrap">
-      <div class="label">What</div>
-      <h2>One sheet for <em>any document</em></h2>
-      <div class="prose">
-        <p>
-          Foglio produces one self-contained HTML file. Specifications,
-          procedures, meeting notes, use-case maps, training, runbooks,
-          API notes, and research summaries all use the same sheet.
-          You copy <a href="skeleton.html">skeleton.html</a>, fill the
-          marked slots, and stop. There is no build step and no package
-          manager.
-        </p>
-        <p>
-          Sections are named from the source material.
-          <a href="catalog.html">catalog.html</a> is a painted list of
-          allowed blocks, not a required table of contents. If the source
-          has no diagram, omit the diagram. If it has no call to action,
-          omit the buttons.
-        </p>
-      </div>
-      <div class="grid-3">
-        <article class="card fade-target">
-          <h3>One file</h3>
-          <p>Open it or send it. Fonts load from Google Fonts. Mermaid 11 loads from jsDelivr. Everything else sits in the file.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Any outline</h3>
-          <p>Ids and labels come from your notes. Do not copy the specimen chapter list unless you are writing a design-system page.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Locked chrome</h3>
-          <p>Fill llm-slot regions only. Style, boot, theme menu, dialog, and runtime stay byte-identical to the skeleton.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt" id="why">
-    <div class="wrap">
-      <div class="label">Why</div>
-      <h2>The sheet has to <em>stay still</em></h2>
-      <div class="prose">
-        <p>
-          Ask a model for a documentation page and it will invent a
-          stylesheet, a fourth theme, and a typewriter on the first
-          screen. The next run looks different. Captions miss contrast.
-          Body text fills with hollow verbs.
-        </p>
-        <p>
-          Foglio keeps the sheet still so the model writes titles,
-          sections, tables, and diagrams. A recipe written for any LLM
-          sits in front of your notes. Hosts that cache prompts can reuse
-          that frozen prefix.
-        </p>
-      </div>
-      <div class="callout">
-        <div class="k">Invariant</div>
-        <p>
-          One file, no build. Copy the skeleton. Fill slots. Apply the
-          writing rules. Stop. Do not restyle, minify, or rewrite frozen
-          chrome.
-        </p>
-      </div>
-      <p>
-        <span class="badge" style="color: var(--accent); background: var(--badge-fill); border: 1px solid var(--badge-border);">Spec</span>
-        <span class="badge" style="color: var(--accent3); background: color-mix(in srgb, var(--accent3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent3) 35%, transparent);">Procedure</span>
-        <span class="badge" style="color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);">Notes</span>
-        <span class="badge" style="color: var(--yellow); background: color-mix(in srgb, var(--yellow) 12%, transparent); border: 1px solid color-mix(in srgb, var(--yellow) 35%, transparent);">Map</span>
-        <span class="badge" style="color: var(--accent2); background: color-mix(in srgb, var(--accent2) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent2) 35%, transparent);">Runbook</span>
-        <span class="badge" style="color: var(--accent); background: var(--badge-fill); border: 1px solid var(--badge-border);">Training</span>
-        <span class="badge" style="color: var(--accent3); background: color-mix(in srgb, var(--accent3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent3) 35%, transparent);">API</span>
-        <span class="badge" style="color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);">Research</span>
-      </p>
-    </div>
-  </section>
-
-  <section id="start">
-    <div class="wrap">
-      <div class="label">Getting started</div>
-      <h2>Document a project <em>with an LLM</em></h2>
-      <div class="prose">
-        <p>
-          Install the skill in the project you want to document. Then
-          say: Document this with Foglio. In Cursor, attach @foglio.
-          The skill loads only when you name Foglio.
-        </p>
-        <pre>npx skills add AlessandroAnnini/foglio</pre>
-        <p>
-          Clone this repository, or copy RECIPE.md and skeleton.html,
-          if you are not using the skill. Add catalog.html only when
-          the model needs to see a painted block.
-        </p>
-        <p>
-          Name the document type from the source: spec, procedure,
-          notes, map, training, runbook, API notes, or other. Gather
-          the notes, transcript, or file list that belong on the page.
-          Those notes go last in the prompt.
-        </p>
-        <p>
-          Ask the model to copy skeleton.html to an output path and
-          fill only the llm-slot regions. Do not ask it to write CSS
-          or to start from a blank HTML file.
-        </p>
-      </div>
-      <pre>Read RECIPE.md first, then skeleton.html.
-Document type: runbook (or spec, notes, ...).
-Copy skeleton.html to docs/overview.html.
-Fill llm-slot regions only. Keep llm-frozen regions byte-identical.
-Source notes:
-&lt;paste notes here&gt;</pre>
-      <div class="grid-3">
-        <article class="card fade-target">
-          <h3>Skill</h3>
-          <p>npx skills add AlessandroAnnini/foglio. Then say Document this with Foglio. In Cursor, attach @foglio. Named only.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Cursor</h3>
-          <p>After the skill is installed, attach @foglio. Or attach @RECIPE.md and @skeleton.html, then paste the source notes, and stop after the slots.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Visual Studio Code</h3>
-          <p>In Copilot Chat, attach the same files with #file or @. In the Claude Code extension, type @RECIPE.md and @skeleton.html. Then add the source and the output path.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Claude Code</h3>
-          <p>From a terminal in the project, ask it to read RECIPE.md and skeleton.html first, then the notes. Give an output path. It can copy the skeleton on disk. Do not let it regenerate the stylesheet.</p>
-        </article>
-      </div>
-      <div class="grid-3">
-        <article class="card fade-target">
-          <h3>ChatGPT and Claude</h3>
-          <p>Upload or paste RECIPE.md and skeleton.html first. Put project notes in the last message. Ask for one complete HTML file, download it, and open it in a browser.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Other agents</h3>
-          <p>Windsurf, Cline, Continue, and similar hosts follow the same order: recipe and skeleton in the prefix, notes last, one output path, slots only.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>After it stops</h3>
-          <p>Check that nav links match every section[id]. Open the file. Switch themes. If CSS changed, restore the frozen regions from the skeleton.</p>
-        </article>
-      </div>
-      <div class="callout">
-        <div class="k">Order</div>
-        <p>
-          Static first, project last. If the host caches prompts, cache
-          the recipe and the skeleton. Put the date, the project name,
-          and the transcript in the suffix. The Method section below
-          has the full prompt shape.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="features">
-    <div class="wrap">
-      <div class="label">Features</div>
-      <h2>A closed catalog, <em>three themes</em></h2>
-      <p class="lede">
-        The model picks blocks the document needs and skips the rest.
-        Theme, type, and motion are already decided. Default theme is
-        System: it follows the OS. The choice persists in html-docs-theme.
-      </p>
-      <div class="grid-3">
-        <article class="card fade-target">
-          <h3>Blocks</h3>
-          <p>Hero, section, cards, badges, callout, table, prose, buttons, Mermaid, and an SVG flow. Nothing else.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Type</h3>
-          <p>Utopia from 360/18/1.2 to 1240/20/1.25. Inter for reading. JetBrains Mono for labels and code. Prose wraps at 65ch.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Access</h3>
-          <p>WCAG 2.2 AA: body 4.5:1, UI 3:1, 200% zoom, 2.5rem hit areas, visible focus, native dialog for graphs.</p>
-        </article>
-      </div>
-      <div class="grid-3">
-        <article class="card fade-target">
-          <h3>Jump</h3>
-          <p>Sticky section links. When the names overflow, the bar becomes a native select. Measure with ResizeObserver.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Mermaid</h3>
-          <p>Version 11 from source text. Tokens pass as hex. Every graph has an expand dialog: X, Escape, or backdrop to close.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Motion</h3>
-          <p>Transform and opacity only, 160 to 400ms. prefers-reduced-motion jumps to the final state in 1ms.</p>
-        </article>
-      </div>
-      <h2>Ink that still reads as <em>accent</em></h2>
-      <p class="lede">
-        Switch Light, Dark, or System in the header. Swatches below
-        repaint from computed tokens. Dark keeps the neon stack. Light
-        keeps 4.5:1 on body and on filled buttons.
-      </p>
-      <div class="swatches" id="swatches"></div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Pair</th>
-              <th>Dark</th>
-              <th>Light</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Body --text on --bg</td>
-              <td class="pass">12.8 AA+</td>
-              <td class="pass">11.4 AA+</td>
-            </tr>
-            <tr>
-              <td>Caption --text-dim on --bg</td>
-              <td class="pass">7.0 AA+</td>
-              <td class="pass">7.0 AA+</td>
-            </tr>
-            <tr>
-              <td>--accent as text on --bg</td>
-              <td class="pass">11.1 AA+</td>
-              <td class="pass">5.2 AA</td>
-            </tr>
-            <tr>
-              <td>--on-accent on --accent (CTA)</td>
-              <td class="pass">11.1 AA+</td>
-              <td class="pass">5.7 AA</td>
-            </tr>
-            <tr>
-              <td>--green / --yellow as text</td>
-              <td class="pass">pass</td>
-              <td class="pass">5.0 / 5.4 AA</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt" id="advantages">
-    <div class="wrap">
-      <div class="label">Advantages</div>
-      <h2>What stays fixed, <em>what the model writes</em></h2>
-      <p class="lede">
-        A blank-page prompt spends tokens on CSS the next run will
-        throw away. Foglio spends them on the document.
-      </p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Concern</th>
-              <th>Blank page</th>
-              <th>Foglio</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Chrome</td>
-              <td>Regenerated each run</td>
-              <td>Frozen in the skeleton</td>
-            </tr>
-            <tr>
-              <td>Outline</td>
-              <td>Copied from the last example</td>
-              <td>Taken from your source</td>
-            </tr>
-            <tr>
-              <td>Writing</td>
-              <td>Model default</td>
-              <td>Recipe rules, ASCII source</td>
-            </tr>
-            <tr>
-              <td>Prompt</td>
-              <td>Whole page in context</td>
-              <td>Recipe and skeleton cached, notes last</td>
-            </tr>
-            <tr>
-              <td>Publish</td>
-              <td>Build or host an app</td>
-              <td>One file at the repo root</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="callout">
-        <div class="k">Cache</div>
-        <p>
-          Keep the recipe and the skeleton in the static prefix. Put the
-          date, the project name, and the transcript in the suffix. Do
-          not feed the full specimen when the skeleton plus the recipe
-          is enough.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="method">
-    <div class="wrap">
-      <div class="label">Method</div>
-      <h2>How to brief <em>an LLM</em></h2>
-      <div class="prose">
-        <p>
-          Read the source and name the document type: spec, procedure,
-          notes, map, training, runbook, or other. Choose section ids
-          and labels from that material.
-        </p>
-        <p>
-          Load <a href="RECIPE.md">RECIPE.md</a> first, then
-          <a href="skeleton.html">skeleton.html</a>. Open
-          <a href="catalog.html">catalog.html</a> only when you need to
-          see a painted block. Put project notes after those files so
-          the frozen prefix can be cached.
-        </p>
-        <p>
-          Ask the model to copy the skeleton to the output path and fill
-          only the llm-slot regions: title, logo, nav, hero, sections,
-          footer. It may set html lang. It must not rewrite style, boot,
-          theme, dialog, or runtime. After it stops, check that
-          #nav-links and #sec-select match every section[id], same
-          order, same labels. Never id a section mermaid.
-        </p>
-        <p>
-          If chrome drifted, restore the frozen blocks from the
-          skeleton. Do not patch CSS by hand. Do not ask the model to
-          regenerate the stylesheet. For Cursor, VS Code, Claude Code,
-          and chat UIs, start at <a href="#start">Getting started</a>.
-        </p>
-      </div>
-      <pre>&lt;system&gt; RECIPE.md &lt;/system&gt;
-&lt;contract&gt; skeleton.html + catalog.html &lt;/contract&gt;
-&lt;task&gt; copy skeleton, fill slots for this document type, stop &lt;/task&gt;
-&lt;source&gt; notes, transcript, names &lt;/source&gt;</pre>
-      <div class="diagram-wrap fade-target">
-        <button type="button" class="diagram-expand" aria-label="Expand sequence diagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-        </button>
-        <div class="mermaid">sequenceDiagram
-  actor Author
-  participant Model as LLM
-  participant Kit as Recipe and skeleton
-  participant Out as Slots
-  Author->>Model: Document type and notes
-  Model->>Kit: Read frozen prefix
-  Kit->>Out: Copy skeleton
-  Out-->>Author: Single HTML file</div>
-      </div>
-      <p class="diagram-note">Sequence: notes go last. The model copies the skeleton and writes slots only.</p>
-    </div>
-  </section>
-
-  <section class="alt" id="map">
-    <div class="wrap">
-      <div class="label">Map</div>
-      <h2>Hover a node, <em>dim the rest</em></h2>
-      <p class="lede">
-        Static HTML uses the manifesto SVG flow. Edit the JSON in
-        #flow-data only. Colors are token names. Hover a node, or press
-        a task button to keep a path lit.
-      </p>
-      <div class="context-flow fade-target" id="context-flow" role="region" aria-label="How a Foglio page is built: Recipe, Skeleton, Notes, Slots, Page">
-        <script type="application/json" id="flow-data">
-{"viewBox":"0 0 660 280","nodes":[{"id":"recipe","label":"Recipe","sub":"Rules","x":90,"y":58,"color":"--accent"},{"id":"skeleton","label":"Skeleton","sub":"Copy","x":330,"y":58,"color":"--accent3"},{"id":"notes","label":"Notes","sub":"Source","x":570,"y":58,"color":"--green"},{"id":"slots","label":"Slots","sub":"Fill","x":210,"y":200,"color":"--accent2"},{"id":"page","label":"Page","sub":"One file","x":450,"y":200,"color":"--yellow"}],"edges":[{"id":"e-rs","from":"recipe","to":"skeleton"},{"id":"e-ss","from":"skeleton","to":"slots"},{"id":"e-ns","from":"notes","to":"slots"},{"id":"e-sp","from":"slots","to":"page"},{"id":"e-rl","from":"recipe","to":"slots"}],"tasks":{"read":["recipe","notes"],"write":["skeleton","slots","page"],"publish":["slots","page"]}}
-        </script>
-        <svg id="flow-svg" viewBox="0 0 660 280" xmlns="http://www.w3.org/2000/svg"></svg>
-      </div>
-      <div class="flow-keys" role="group" aria-label="Highlight a path">
-        <button type="button" data-flow-task="read">Read</button>
-        <button type="button" data-flow-task="write">Write</button>
-        <button type="button" data-flow-task="publish">Publish</button>
-      </div>
-      <p class="diagram-note">
-        Read = Recipe and Notes. Write = Skeleton, Slots, and Page.
-        Publish = Slots and Page. Hover a node when no button is pressed.
-      </p>
-    </div>
-  </section>
-
-  <section id="diagrams">
-    <div class="wrap">
-      <div class="label">Diagrams</div>
-      <h2>Any graph from <em>text</em></h2>
-      <p class="lede">
-        Mermaid 11, theme base, tokens as hex. The source stays in the
-        page. A theme change restores the text and runs mermaid.run
-        again. Expand a graph to read it full screen.
-      </p>
+      <div class="label">One</div>
+      <h2>Heading with <em>accent</em></h2>
+      <p class="lede">Replace this section. Add more section[id] blocks. Keep ids in the nav slot in the same order.</p>
       <div class="diagram-wrap fade-target">
         <button type="button" class="diagram-expand" aria-label="Expand flowchart">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
         </button>
         <div class="mermaid">flowchart TD
-  type["Name the document type"] --> copy["Copy skeleton.html"]
-  copy --> slots["Fill llm-slot regions"]
-  slots --> nav["Sync nav and section ids"]
-  nav --> write["Apply writing rules"]
-  write --> stop["Stop. Do not restyle"]</div>
+  a["Start"] --> b["End"]</div>
       </div>
-      <p class="diagram-note">Flowchart: the protocol in RECIPE.md, in order.</p>
-      <div class="diagram-wrap fade-target">
-        <button type="button" class="diagram-expand" aria-label="Expand state diagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-        </button>
-        <div class="mermaid">stateDiagram-v2
-  [*] --> System
-  System --> Light: pick sun
-  System --> Dark: pick moon
-  Light --> Dark: pick moon
-  Dark --> Light: pick sun
-  Light --> System: pick monitor
-  Dark --> System: pick monitor</div>
+      <p class="diagram-note">Prose alternative for the diagram.</p>
+      <div class="context-flow fade-target" id="context-flow" role="region" aria-label="Flow">
+        <script type="application/json" id="flow-data">
+{"viewBox":"0 0 660 280","nodes":[{"id":"a","label":"A","sub":"One","x":160,"y":120,"color":"--accent"},{"id":"b","label":"B","sub":"Two","x":500,"y":120,"color":"--accent3"}],"edges":[{"id":"e-ab","from":"a","to":"b"}],"tasks":{}}
+        </script>
+        <svg id="flow-svg" viewBox="0 0 660 280" xmlns="http://www.w3.org/2000/svg"></svg>
       </div>
-      <p class="diagram-note">State: the three stored values. System is the start.</p>
     </div>
   </section>
   <!-- /llm-slot:sections -->
 
   <!-- llm-slot:footer -->
-  <footer>FOGLIO · MIT · ONE FILE</footer>
+  <footer>NAME · SYSTEM DEFAULT · html-docs-theme</footer>
   <!-- /llm-slot:footer -->
 
   <!-- llm-frozen:dialog -->
