@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- llm-slot:title --><title>Document title</title><!-- /llm-slot:title -->
+  <!-- llm-slot:title --><title>Model Context Protocol</title><!-- /llm-slot:title -->
   <!-- llm-frozen:boot -->
   <script>
     (function () {
@@ -885,15 +885,23 @@
   -->
   <nav>
     <!-- llm-slot:logo -->
-    <a class="logo" href="#top"><span>{</span> NAME <span>}</span></a>
+    <a class="logo" href="#top"><span>{</span> MCP <span>}</span></a>
     <!-- /llm-slot:logo -->
     <div class="nav-jump" id="nav-jump">
       <!-- llm-slot:nav -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="#one">One</a></li>
+        <li><a href="#what">What</a></li>
+        <li><a href="#enable">Enable</a></li>
+        <li><a href="#why">Why</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#start">Start</a></li>
       </ul>
       <select class="sec-select" id="sec-select" aria-label="Section">
-        <option value="#one">One</option>
+        <option value="#what">What</option>
+        <option value="#enable">Enable</option>
+        <option value="#why">Why</option>
+        <option value="#support">Support</option>
+        <option value="#start">Start</option>
       </select>
       <!-- /llm-slot:nav -->
     </div>
@@ -934,39 +942,178 @@
     <div class="orb orb-b"></div>
     <!-- llm-slot:hero -->
     <div class="hero-inner">
-      <div class="label">Label</div>
-      <h1>Title.<br><em>Accent.</em></h1>
-      <p class="lede">Lead paragraph. 65ch. One space between sentences.</p>
+      <div class="label">Open standard</div>
+      <h1>A USB-C port<br>for <em>AI applications</em></h1>
+      <p class="lede">
+        MCP is an open-source standard for connecting AI applications to
+        data sources, tools, and workflows. This page is a Foglio example
+        written from the official intro.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro">Official intro</a>
+        <a class="btn btn-ghost" href="index.html">Back to Foglio</a>
+      </div>
+      <div class="stats">
+        <div>
+          <div class="stat-n">1</div>
+          <div class="stat-l">Protocol</div>
+        </div>
+        <div>
+          <div class="stat-n">3</div>
+          <div class="stat-l">Roles</div>
+        </div>
+        <div>
+          <div class="stat-n">4</div>
+          <div class="stat-l">Example uses</div>
+        </div>
+      </div>
     </div>
     <!-- /llm-slot:hero -->
   </header>
 
   <!-- llm-slot:sections -->
-  <section id="one">
+  <section id="what">
     <div class="wrap">
-      <div class="label">One</div>
-      <h2>Heading with <em>accent</em></h2>
-      <p class="lede">Replace this section. Add more section[id] blocks. Keep ids in the nav slot in the same order.</p>
+      <div class="label">What</div>
+      <h2>One port for <em>data and tools</em></h2>
+      <div class="prose">
+        <p>
+          MCP (Model Context Protocol) is an open-source standard for
+          connecting AI applications to external systems. Claude or
+          ChatGPT can reach local files, databases, search tools, and
+          specialized prompts through the same port.
+        </p>
+        <p>
+          Think of MCP like a USB-C port for AI applications. USB-C
+          standardizes how devices connect. MCP standardizes how AI
+          applications connect to data, tools, and workflows.
+        </p>
+      </div>
+      <div class="callout">
+        <div class="k">Source</div>
+        <p>
+          This page follows the official intro:
+          <a href="https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro">modelcontextprotocol.io</a>.
+          It is a Foglio worked example, not the specification.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="enable">
+    <div class="wrap">
+      <div class="label">Enable</div>
+      <h2>What MCP can <em>turn on</em></h2>
+      <p class="lede">
+        The same protocol covers personal assistants, design-to-code,
+        company data, and shop-floor hardware.
+      </p>
+      <div class="grid-3">
+        <article class="card fade-target">
+          <h3>Calendar and Notion</h3>
+          <p>An agent can read your Google Calendar and Notion and act as a more personal assistant.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>Figma to code</h3>
+          <p>Claude Code can generate a web app from a Figma design.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>Company databases</h3>
+          <p>An enterprise chatbot can query more than one database and answer in chat.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>Blender and print</h3>
+          <p>A model can create a 3D design in Blender and send it to a 3D printer.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <div class="label">Why</div>
+      <h2>Who gains, <em>and how</em></h2>
+      <p class="lede">
+        The benefit depends on where you sit: you write the integration,
+        you ship the assistant, or you use it.
+      </p>
+      <div class="grid-3">
+        <article class="card fade-target">
+          <h3>Developers</h3>
+          <p>Less time and less complexity when you build an AI application or attach one to a tool.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>Applications</h3>
+          <p>The app can reach data sources, tools, and other apps through one protocol.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>End users</h3>
+          <p>The assistant can read your data and take actions for you when you allow it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="support">
+    <div class="wrap">
+      <div class="label">Support</div>
+      <h2>Build once, <em>connect many</em></h2>
+      <div class="prose">
+        <p>
+          MCP is an open protocol used by many clients and servers.
+          Claude, ChatGPT, Visual Studio Code, Cursor, MCPJam, and
+          others already speak it. You write a server or a client once
+          and reuse it.
+        </p>
+      </div>
+      <p>
+        <span class="badge" style="color: var(--accent); background: var(--badge-fill); border: 1px solid var(--badge-border);">Claude</span>
+        <span class="badge" style="color: var(--accent3); background: color-mix(in srgb, var(--accent3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent3) 35%, transparent);">ChatGPT</span>
+        <span class="badge" style="color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);">VS Code</span>
+        <span class="badge" style="color: var(--yellow); background: color-mix(in srgb, var(--yellow) 12%, transparent); border: 1px solid color-mix(in srgb, var(--yellow) 35%, transparent);">Cursor</span>
+        <span class="badge" style="color: var(--accent2); background: color-mix(in srgb, var(--accent2) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent2) 35%, transparent);">MCPJam</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="start">
+    <div class="wrap">
+      <div class="label">Start</div>
+      <h2>Three ways to <em>build</em></h2>
+      <p class="lede">
+        Start from the role you need. Servers expose data and tools.
+        Clients connect to those servers. MCP Apps run inside an AI
+        client.
+      </p>
+      <div class="grid-3">
+        <article class="card fade-target">
+          <h3>Servers</h3>
+          <p>Create an MCP server to expose your data and tools.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>Clients</h3>
+          <p>Develop an application that connects to MCP servers.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>MCP Apps</h3>
+          <p>Build an interactive app that runs inside an AI client.</p>
+        </article>
+      </div>
       <div class="diagram-wrap fade-target">
         <button type="button" class="diagram-expand" aria-label="Expand flowchart">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
         </button>
-        <div class="mermaid">flowchart TD
-  a["Start"] --> b["End"]</div>
+        <div class="mermaid">flowchart LR
+  apps["AI apps"] --> mcp["MCP"]
+  mcp --> data["Data and tools"]</div>
       </div>
-      <p class="diagram-note">Prose alternative for the diagram.</p>
-      <div class="context-flow fade-target" id="context-flow" role="region" aria-label="Flow">
-        <script type="application/json" id="flow-data">
-{"viewBox":"0 0 660 280","nodes":[{"id":"a","label":"A","sub":"One","x":160,"y":120,"color":"--accent"},{"id":"b","label":"B","sub":"Two","x":500,"y":120,"color":"--accent3"}],"edges":[{"id":"e-ab","from":"a","to":"b"}],"tasks":{}}
-        </script>
-        <svg id="flow-svg" viewBox="0 0 660 280" xmlns="http://www.w3.org/2000/svg"></svg>
-      </div>
+      <p class="diagram-note">Apps speak MCP. MCP reaches data and tools.</p>
     </div>
   </section>
   <!-- /llm-slot:sections -->
 
   <!-- llm-slot:footer -->
-  <footer>NAME · SYSTEM DEFAULT · html-docs-theme</footer>
+  <footer>FOGLIO · MCP EXAMPLE · MIT</footer>
   <!-- /llm-slot:footer -->
 
   <!-- llm-frozen:dialog -->

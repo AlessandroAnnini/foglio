@@ -11,3 +11,4 @@ Read RECIPE.md first. Copy skeleton.html to the output path. Use catalog.html on
 - [Skill](skills/foglio/SKILL.md): installable agent skill, named invocation
 - [Specimen](catalog.html): visual catalog of every allowed block
 - [Project page](index.html): Foglio explained, built from the skeleton
+- [Example](mcp.html): MCP intro documented with Foglio

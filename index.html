@@ -580,6 +580,7 @@
       background: var(--callout-fill);
       border: 1px solid var(--callout-border);
       border-radius: 0.5rem;
+      margin-top: 1.5rem;
       margin-bottom: 1.25rem;
       max-inline-size: 65ch;
     }
@@ -889,9 +890,9 @@
     <div class="nav-jump" id="nav-jump">
       <!-- llm-slot:nav -->
       <ul class="nav-links" id="nav-links">
+        <li><a href="#start">Start</a></li>
         <li><a href="#what">What</a></li>
         <li><a href="#why">Why</a></li>
-        <li><a href="#start">Start</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#advantages">Advantages</a></li>
         <li><a href="#method">Method</a></li>
@@ -899,9 +900,9 @@
         <li><a href="#diagrams">Diagrams</a></li>
       </ul>
       <select class="sec-select" id="sec-select" aria-label="Section">
+        <option value="#start">Start</option>
         <option value="#what">What</option>
         <option value="#why">Why</option>
-        <option value="#start">Start</option>
         <option value="#features">Features</option>
         <option value="#advantages">Advantages</option>
         <option value="#method">Method</option>
@@ -956,6 +957,7 @@
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#start">Get started</a>
+        <a class="btn btn-ghost" href="mcp.html">See MCP example</a>
         <a class="btn btn-ghost" href="RECIPE.md">Read the recipe</a>
       </div>
       <div class="stats">
@@ -977,83 +979,6 @@
   </header>
 
   <!-- llm-slot:sections -->
-  <section id="what">
-    <div class="wrap">
-      <div class="label">What</div>
-      <h2>One sheet for <em>any document</em></h2>
-      <div class="prose">
-        <p>
-          Foglio produces one HTML file. Specifications, procedures,
-          meeting notes, use-case maps, training, runbooks, API notes,
-          and research summaries all use the same sheet. You copy
-          <a href="skeleton.html">skeleton.html</a>, fill the marked
-          slots, and stop. There is no build. Fonts and Mermaid load
-          from CDNs.
-        </p>
-        <p>
-          Sections are named from the source material.
-          <a href="catalog.html">catalog.html</a> is a painted list of
-          allowed blocks, not a required table of contents. If the source
-          has no diagram, omit the diagram. If it has no call to action,
-          omit the buttons.
-        </p>
-      </div>
-      <div class="grid-3">
-        <article class="card fade-target">
-          <h3>One file</h3>
-          <p>Open it or send it. Fonts load from Google Fonts. Mermaid 11 loads from jsDelivr. Everything else sits in the file.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Any outline</h3>
-          <p>Ids and labels come from your notes. Do not copy the specimen chapter list unless you are writing a design-system page.</p>
-        </article>
-        <article class="card fade-target">
-          <h3>Locked chrome</h3>
-          <p>Fill llm-slot regions only. Style, boot, theme menu, dialog, and runtime stay byte-identical to the skeleton.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt" id="why">
-    <div class="wrap">
-      <div class="label">Why</div>
-      <h2>The sheet has to <em>stay still</em></h2>
-      <div class="prose">
-        <p>
-          Ask a model for a documentation page and it will invent a
-          stylesheet, a fourth theme, and a typewriter on the first
-          screen. The next run looks different. Captions miss contrast.
-          Body text fills with hollow verbs.
-        </p>
-        <p>
-          Foglio keeps the sheet still so the model writes titles,
-          sections, tables, and diagrams. A recipe written for any LLM
-          sits in front of your notes. Hosts that cache prompts can reuse
-          that frozen prefix.
-        </p>
-      </div>
-      <div class="callout">
-        <div class="k">Invariant</div>
-        <p>
-          One file, no build. Copy the skeleton. Fill slots. Apply the
-          writing rules. Stop. Do not restyle, minify, or rewrite frozen
-          chrome.
-        </p>
-      </div>
-      <p>
-        <span class="badge" style="color: var(--accent); background: var(--badge-fill); border: 1px solid var(--badge-border);">Spec</span>
-        <span class="badge" style="color: var(--accent3); background: color-mix(in srgb, var(--accent3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent3) 35%, transparent);">Procedure</span>
-        <span class="badge" style="color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);">Notes</span>
-        <span class="badge" style="color: var(--yellow); background: color-mix(in srgb, var(--yellow) 12%, transparent); border: 1px solid color-mix(in srgb, var(--yellow) 35%, transparent);">Map</span>
-        <span class="badge" style="color: var(--accent2); background: color-mix(in srgb, var(--accent2) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent2) 35%, transparent);">Runbook</span>
-        <span class="badge" style="color: var(--accent); background: var(--badge-fill); border: 1px solid var(--badge-border);">Training</span>
-        <span class="badge" style="color: var(--accent3); background: color-mix(in srgb, var(--accent3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent3) 35%, transparent);">API</span>
-        <span class="badge" style="color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);">Research</span>
-      </p>
-    </div>
-  </section>
-
   <section id="start">
     <div class="wrap">
       <div class="label">Getting started</div>
@@ -1132,7 +1057,84 @@ Source notes:
     </div>
   </section>
 
-  <section id="features">
+  <section class="alt" id="what">
+    <div class="wrap">
+      <div class="label">What</div>
+      <h2>One sheet for <em>any document</em></h2>
+      <div class="prose">
+        <p>
+          Foglio produces one HTML file. Specifications, procedures,
+          meeting notes, use-case maps, training, runbooks, API notes,
+          and research summaries all use the same sheet. You copy
+          <a href="skeleton.html">skeleton.html</a>, fill the marked
+          slots, and stop. There is no build. Fonts and Mermaid load
+          from CDNs.
+        </p>
+        <p>
+          Sections are named from the source material.
+          <a href="catalog.html">catalog.html</a> is a painted list of
+          allowed blocks, not a required table of contents. If the source
+          has no diagram, omit the diagram. If it has no call to action,
+          omit the buttons.
+        </p>
+      </div>
+      <div class="grid-3">
+        <article class="card fade-target">
+          <h3>One file</h3>
+          <p>Open it or send it. Fonts load from Google Fonts. Mermaid 11 loads from jsDelivr. Everything else sits in the file.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>Any outline</h3>
+          <p>Ids and labels come from your notes. Do not copy the specimen chapter list unless you are writing a design-system page.</p>
+        </article>
+        <article class="card fade-target">
+          <h3>Locked chrome</h3>
+          <p>Fill llm-slot regions only. Style, boot, theme menu, dialog, and runtime stay byte-identical to the skeleton.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <div class="label">Why</div>
+      <h2>The sheet has to <em>stay still</em></h2>
+      <div class="prose">
+        <p>
+          Ask a model for a documentation page and it will invent a
+          stylesheet, a fourth theme, and a typewriter on the first
+          screen. The next run looks different. Captions miss contrast.
+          Body text fills with hollow verbs.
+        </p>
+        <p>
+          Foglio keeps the sheet still so the model writes titles,
+          sections, tables, and diagrams. A recipe written for any LLM
+          sits in front of your notes. Hosts that cache prompts can reuse
+          that frozen prefix.
+        </p>
+      </div>
+      <div class="callout">
+        <div class="k">Invariant</div>
+        <p>
+          One file, no build. Copy the skeleton. Fill slots. Apply the
+          writing rules. Stop. Do not restyle, minify, or rewrite frozen
+          chrome.
+        </p>
+      </div>
+      <p>
+        <span class="badge" style="color: var(--accent); background: var(--badge-fill); border: 1px solid var(--badge-border);">Spec</span>
+        <span class="badge" style="color: var(--accent3); background: color-mix(in srgb, var(--accent3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent3) 35%, transparent);">Procedure</span>
+        <span class="badge" style="color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);">Notes</span>
+        <span class="badge" style="color: var(--yellow); background: color-mix(in srgb, var(--yellow) 12%, transparent); border: 1px solid color-mix(in srgb, var(--yellow) 35%, transparent);">Map</span>
+        <span class="badge" style="color: var(--accent2); background: color-mix(in srgb, var(--accent2) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent2) 35%, transparent);">Runbook</span>
+        <span class="badge" style="color: var(--accent); background: var(--badge-fill); border: 1px solid var(--badge-border);">Training</span>
+        <span class="badge" style="color: var(--accent3); background: color-mix(in srgb, var(--accent3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent3) 35%, transparent);">API</span>
+        <span class="badge" style="color: var(--green); background: color-mix(in srgb, var(--green) 12%, transparent); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);">Research</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="alt" id="features">
     <div class="wrap">
       <div class="label">Features</div>
       <h2>A closed catalog, <em>three themes</em></h2>
@@ -1217,7 +1219,7 @@ Source notes:
     </div>
   </section>
 
-  <section class="alt" id="advantages">
+  <section id="advantages">
     <div class="wrap">
       <div class="label">Advantages</div>
       <h2>What stays fixed, <em>what the model writes</em></h2>
@@ -1275,7 +1277,7 @@ Source notes:
     </div>
   </section>
 
-  <section id="method">
+  <section class="alt" id="method">
     <div class="wrap">
       <div class="label">Method</div>
       <h2>How to brief <em>an LLM</em></h2>
@@ -1329,7 +1331,7 @@ Source notes:
     </div>
   </section>
 
-  <section class="alt" id="map">
+  <section id="map">
     <div class="wrap">
       <div class="label">Map</div>
       <h2>Hover a node, <em>dim the rest</em></h2>
@@ -1356,7 +1358,7 @@ Source notes:
     </div>
   </section>
 
-  <section id="diagrams">
+  <section class="alt" id="diagrams">
     <div class="wrap">
       <div class="label">Diagrams</div>
       <h2>Any graph from <em>text</em></h2>

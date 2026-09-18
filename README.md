@@ -12,6 +12,10 @@ Then say: Document this with Foglio. In Cursor, attach `@foglio`. The skill load
 
 One HTML file. No build. Fonts and Mermaid load from CDNs.
 
+Example: [MCP documented with Foglio](https://alessandroannini.github.io/foglio/mcp.html).
+
+[![MCP documented with Foglio](mcp.png)](https://alessandroannini.github.io/foglio/mcp.html)
+
 Works for specifications, procedures, meeting notes, use-case maps, training, runbooks, API notes, and research summaries. Copy [skeleton.html](skeleton.html) to write a page. The rules sit in [RECIPE.md](RECIPE.md). [catalog.html](catalog.html) is a catalog of allowed blocks, not a required table of contents. The outline comes from your source.
 
 ## Features
@@ -28,6 +32,7 @@ Works for specifications, procedures, meeting notes, use-case maps, training, ru
 | File | Role |
 |---|---|
 | [index.html](index.html) | Project page (GitHub Pages) |
+| [mcp.html](mcp.html) | Worked example (MCP intro) |
 | [catalog.html](catalog.html) | Specimen and visual catalog |
 | [skeleton.html](skeleton.html) | Start file: frozen chrome, empty slots |
 | [RECIPE.md](RECIPE.md) | Protocol, writing rules, tokens, catalog |

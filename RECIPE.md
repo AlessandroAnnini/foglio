@@ -2,7 +2,7 @@
 
 Use this folder only. One HTML file, no build. Fonts and Mermaid load from CDNs.
 
-Foglio produces one HTML file for any documentation: specifications, procedures, meeting notes, use-case maps, training, runbooks, API notes, research summaries, or a design specimen. The outline comes from the source material. [catalog.html](catalog.html) is a catalog of allowed blocks, not a required table of contents. [index.html](index.html) is this project's own page.
+Foglio produces one HTML file for any documentation: specifications, procedures, meeting notes, use-case maps, training, runbooks, API notes, research summaries, or a design specimen. The outline comes from the source material. [catalog.html](catalog.html) is a catalog of allowed blocks, not a required table of contents. [index.html](index.html) is this project's own page. [mcp.html](mcp.html) is a worked example.
 
 Generate from this file plus [skeleton.html](skeleton.html). The painted contract is [catalog.html](catalog.html). Index: [llms.txt](llms.txt).
 
