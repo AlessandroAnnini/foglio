@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Documentation",
+      "description": "One HTML file, no build. Copy the skeleton, fill slots, keep the chrome frozen. Fonts and Mermaid load from CDNs.",
+      "skills": ["foglio"]
+    }
+  ]
+}

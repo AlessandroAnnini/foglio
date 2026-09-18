@@ -8,7 +8,7 @@ Live page: [alessandroannini.github.io/foglio](https://alessandroannini.github.i
 npx skills add AlessandroAnnini/foglio
 ```
 
-Listing: [skills.sh/AlessandroAnnini/foglio](https://skills.sh/AlessandroAnnini/foglio)
+Listing: [skills.sh/AlessandroAnnini/foglio](https://skills.sh/AlessandroAnnini/foglio). Skill page: [foglio](https://skills.sh/AlessandroAnnini/foglio/foglio).
 
 Then say: Document this with Foglio. In Cursor, attach `@foglio`. The skill loads only when you name Foglio.
 
