@@ -1,6 +1,6 @@
 # Foglio
 
-Self-contained. Use this folder only.
+Use this folder only. One HTML file, no build. Fonts and Mermaid load from CDNs.
 
 Foglio produces one HTML file for any documentation: specifications, procedures, meeting notes, use-case maps, training, runbooks, API notes, research summaries, or a design specimen. The outline comes from the source material. [catalog.html](catalog.html) is a catalog of allowed blocks, not a required table of contents. [index.html](index.html) is this project's own page.
 
