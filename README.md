@@ -4,7 +4,7 @@
 
 A foglio is the sheet. This kit is that sheet: one HTML file an LLM can fill without rewriting the CSS.
 
-Version [1.0.0](https://github.com/AlessandroAnnini/foglio/releases/tag/v1.0.0)
+Version [1.0.1](https://github.com/AlessandroAnnini/foglio/releases/tag/v1.0.1)
 
 Live page: [alessandroannini.github.io/foglio](https://alessandroannini.github.io/foglio/)
 

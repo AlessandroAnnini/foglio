@@ -6,7 +6,7 @@ description: >-
   or asks to write a Foglio page.
 disable-model-invocation: true
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Foglio
@@ -34,7 +34,7 @@ Output budget: slots only. Chrome is already correct.
 
 Put project notes, the date, and the transcript after the recipe and the skeleton. Do not feed the full specimen when the recipe plus the skeleton is enough.
 
-Open a painted catalog only when you need to see a block. If `catalog.html` is not on disk, fetch `https://raw.githubusercontent.com/AlessandroAnnini/foglio/main/catalog.html`.
+Open a painted catalog only when you need to see a block. If `catalog.html` is not in the project, do not fetch it. Use `RECIPE.md` for the allowed blocks.
 
 ## Drift
 
